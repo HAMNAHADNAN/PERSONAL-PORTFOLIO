@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAMNAH~PORTFOLIO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        *{margin: 0;
+        padding: 0;}
+        body{background-color:rgb(4, 126, 126);color: rgb(255, 255, 255);
+            font-family: 'Poppins', sans-serif;}
+            html{
+                scroll-behavior: smooth;
+            }
+            nav{
+        display:flex;
+        justify-content:space-around;
+        align-items:center;
+        height: 70px;
+        background-color: rgb(0, 0, 0);
+        position: sticky;
+        top: 0;
+    }
+            nav ul{
+        display:flex;
+        justify-content:center;
+    }
+            nav ul li{
+        list-style: none;
+        margin: 0 23px;
+        position: sticky;
+    }
+            nav ul li a{
+        text-decoration: none;
+        color: white;
+        position: sticky;
+
+    }
+            nav ul li a:hover{
+        font-size: 1.09rem;
+        color:rgb(20, 220, 177);
+        position: sticky;
+    }
+    .left{
+        font-size: 1.7rem;
+    }
+    .first{
+        display: flex;
+        justify-content: space-around;
+        margin: 6px 10px;
+    }
+    .first > div{
+        width: 30%;
+        margin: 70px 0;
+    }
+    .leftsection{
+        font-size: 2rem;
+        
+    }
+    .buttons{
+        
+        margin: 3px 2px;
+        padding: 30px;
+        
+    }
+    .btn{
+        transition: transform 0.5s;}
+    .btn:hover{
+    transform: translateY(-5px);
+   }
+    .rightsection img{
+        width: 100%;
+        margin: -30px -10px;
+
+    }
+    .purple{
+        color: rgb(1, 8, 7);
+    }
+    #element{
+        color: rgb(0, 0, 0);
+    }
+    .ft{
+       background-color: rgb(3, 8, 8);
+       height: 130px;
+       font-size: 0.95rem;
+       
+    }
+    .ft{
+        display: flex;
+        padding: 13px 20px;
+        justify-content: space-between;
+    }
+    .ft ul{
+        list-style: none;
+    }
+    .ft > div{
+        width: 223px;
+
+    }
+    #ABOUT{
+        padding: 80px 0;
+        color: black;
+    }
+    .row{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap:wrap-reverse;
+
+    }
+    .about-col1{
+        flex-basis: 30%;
+    }
+    .about-col1 img{
+        width: 300%;
+        border-radius: 25px;
+    }
+    .about-col2{
+        padding: 30%;
+       margin: -240px -115px;
+    }
+    .subtitle{
+        font-size: 3rem;
+        font-weight: 600;
+        color: rgb(0, 0, 0);  
+    }
+    .tab-titles{
+        display: flex;
+        margin: 20px 0 40 px;
+    }
+    .tab-links{
+        margin-right: 50px;
+        font-size: 18px;
+        font-weight: 500;
+        cursor: pointer;
+        position: relative;
+    }
+    .tab-links::after{
+       content: '';
+       width: 0;
+       height: 2px;
+       background-color: rgb(0, 0, 0);
+       position: absolute;
+       left: 0;
+       bottom: 0px;
+       transition: 0.5s;
+    }
+    .tab-links.active-link::after{
+       width: 50%;
+    }
+    .tab-contents ul li{
+        list-style: none;
+        margin: 10px 0
+    }
+    .tab-contents ul li span{
+       color: rgb(0, 0, 0);
+       font-size: 17px;
+       font-weight: 600;
+    }
+    .tab-contents {
+        display: none;
+    }
+    .tab-contents.active-tab{
+        display: block;
+    }
+    #SKILLS{
+        margin: -53px -7px;
+        padding: 30px 0;
+    }
+    .skillslist{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap:40px;
+    margin-top: 15px;
+    }
+    .skillslist div{
+        background-color: rgb(8, 4, 4);
+        border-radius: 13px;
+        padding: 44px;
+        font-size: 1.5rem;
+    }
+    #prjs{
+        padding: 50px 0;
+    }
+    .project-list{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap:40px;
+    margin-top: 15px;
+    }
+    .prj{
+        border-radius: 10px;
+        position: relative;
+        overflow: hidden;
+    }
+    .prj img{
+       width: 80%;
+       border-radius: 10px;
+       display: block;
+    }
+   .layer h3{
+    font-weight: 800;
+    margin-bottom:20px ;
+    color: black;
+   }
+   .social-icons{
+    margin: 0px 93px;
+    padding:12px;
+    
+   }
+   .social-icons a{
+   text-decoration: none;
+   font-size: 30px;
+   margin-right: 15px;
+   color: #021aee;
+   display: inline-block;
+   transition: transform 0.5s;
+   }
+   .social-icons a:hover{
+    color: brown;
+    transform: translateY(-5px);
+   }
+    </style>
+   
+</head>
+<body>
+    <header>
+        <div id="header">
+        <nav>
+
+            <div class="left">Hamnah's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li> <a href="#header">HOME</a></li>
+                    <li><a href="#ABOUT">ABOUT</a></li>
+                    <li><a href="#SKILLS">SKILLS</a></li>
+                    <li><a href="#prjs">PROJECTS</a></li>
+                    <li><a href="HAMNAH RESUME.pdf">RESUME</a></li>
+                    <li><a href="#CONTACT">CONTACT ME</a></li>
+                </ul>
+            </div>
+            
+        </nav>
+        
+    </header>
+    
+       <main>
+        <section class="first">
+            <div class="leftsection">Hi! I am <span class="purple"> HAMNAH ADNAN </span>
+            <div>I am passionate </div> <span id="element"></span> 
+            <div class="buttons" >
+                <a href="HAMNAH RESUME.pdf" download><button class="btn" style ="background-color: black;color: aliceblue; border: 2px solid white ;border-radius: 6px;font-size: 20px;width: 190px;height: 50px; cursor:pointer">Download resume</button></a>
+               <a href="https://github.com/HAMNAHADNAN"><button class="btn" style ="background-color: black;color: aliceblue; border: 2px solid white ;border-radius: 6px;font-size: 20px;width: 150px;height: 50px; cursor:pointer;">Visit Github</button></a> 
+            </div>
+           <hr>
+            <div id="ABOUT">
+                <div class="container">
+                    <div class="row">
+                        <div class="about-col1"><img src="pic.png" alt=""></div>
+
+                        
+                    </div>
+                </div>
+            </div>
+            <div id="SKILLS">
+                <div class="container">
+                    <h1 class="subtitle">SKILLS <hr></h1>
+                    <div class="skillslist">
+                        <div><ul>
+                            <li>Python</li> 
+                            <li>C++</li>
+                            <li >Web Development</li>
+                            <li>UI/UX Design</li>
+                            <li>Html/CSS/Javascript</li>
+                        </ul>
+                        </div>
+                    </div>
+                </div>
+               </div>
+              
+               <div id="prjs">
+                <div class="container">
+                    <h1 class="subtitle">MY PROJECTS <hr></h1>
+                    <div class="project-list">
+                        <div class="prj">
+                            <img src="py.png">
+                            
+                        </div>
+                        <div class="prj" style="width:80% ;margin: 60px;">
+                            <img src="th.png">
+                            
+                        </div>
+                        <div class="prj">
+                            <img src="movie.png">
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+               </div>
+               <div id="CONTACT">
+                <div class="container">
+                    <div class="rows">
+                        <div class="c1">
+                            <h4 class="subtitle">CONTACT ME</h4> <hr>
+                            <p style="font-size: 1.5rem;">hamnahadnan1@gmail.com</p>
+                            <p style="font-size: 1.5rem;">+923302917320</p>
+                            <div class="social-icons">
+                                <a style="margin:5px; background-color: rgb(255, 255, 255);border-radius: 20px; padding: -10px;" href="https://www.facebook.com/hamnah.adnan.1?mibextid=ZbWKwL"><ion-icon name="logo-facebook"></ion-icon></a>
+                                <a style="margin:15px;background-color: rgb(255, 255, 255);border-radius: 20px; padding: -10px;" href="https://instagram.com/ham_nahh?igshid=OGQ5ZDc2ODk2ZA=="><ion-icon name="logo-instagram"></ion-icon></a>
+                                <a style="margin:12px;background-color: rgb(255, 255, 255);border-radius: 20px; padding: -8px;" href="https://www.linkedin.com/in/hamnah-adnan-57b486294?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><ion-icon name="logo-linkedin"></ion-icon></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+               </div>
+        </div>  
+           
+            <div class="rightsection">
+                <img src="img.png.webp" alt="error">
+                <div class="about-col2">
+                    <h1 class="subtitle" style="margin: 190px -110px 13px;" >ABOUT ME <hr></h1>
+                    <ul style="margin: 6px -112px;">
+                    <p >Hello, I'm Hamnah, a software engineering student from NEDUET. I have a deep fascination for coding and problem-solving, which led me to pursue software engineering. I find joy in creating efficient and user-friendly applications. Growing up surrounded by technology, I've honed my skills in various programming languages. Currently, I'm studying software engineering to enhance my expertise and contribute to innovative tech solutions. I am passionate about Web designing and web development,and I'm excited to collaborate with like-minded professionals in the tech industry.</p>
+                    <div class="tab-titles" >
+                        <p class="tab-links active-link" onclick="opentab('skills')">SKILLS</p>
+                        <p class="tab-links " onclick="opentab('projects')">PROJECTS</p>
+                        <p class="tab-links " onclick="opentab('education')">EDUCATION</p>
+
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Python</span><br>Tkinter GUI</li>
+                            <li><span>C++</span><br>Graphics</li>
+                            <li><span>Html/CSS/Javascript</span><br>Web Development</li>
+                            <li><span>Amazon VA</span><br>Virtual Assistant</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="projects">
+                        <ul>
+                            <li><span>Car Game</span><br>Interactive 2D car game using python</li>
+                            <li><span>3D Dot product of two vector</span><br>Displaying dot product graphically using python</li>
+                            <li><span>Movie Ticket Booking System</span><br>A user friendly app for ticket booking of a movie using C++</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>School</span><br>SM Public Academy  -> 2008-2020</li>
+                            <li><span>College</span><br>BAMM PECHS Govt College  -> 2021-2022</li>
+                            <li><span>Course</span><br>Amazon VA -> 2023</li>
+                            <li><span>University</span><br>Software Engineering at NEDUET  -> Current </li>
+                        </ul>
+                    </div>
+                </ul>
+                    <div class="layer" style="margin: 449px -90px; padding: -22px;">
+                        <h3>CAR GAME</h3>
+                        <p>The car game was created using Python, utilizing a variety of its classes and modules. By calling different methods, we designed a 2D game where players control a car with the arrow keys, avoiding oncoming enemy vehicles. The car's speed increases every 5 points. When the player loses, they're asked if they want to play again.</p>
+                       
+                    </div>
+                    <div class="layer"  style="margin: -371px -90px; padding: -22px;">
+                        <h3> 3D DOT PRODUCT </h3>
+                        <p>This project, developed in Python, calculates the dot product of two vectors and displays it in a 3D space with x, y, and z-axes. It uses Matplotlib and Tkinter. Users input values for two three-dimensional vectors, and pressing the 'Dot Product' button computes the result. Additionally, there's a 'Plot' button for visualizing the product in a 3D graph.</p>
+                       
+                    </div>
+                    <div class="layer" style="margin: 490px -90px; padding: -22px;">
+                        <h3>MOVIE BOOKING SYSTEM</h3>
+                        <p>The C++ Movie Ticket Booking System, built with file handling, arrays, classes, and functions, simplifies ticket booking. It enables users to register, browse movies, reserve tickets, verify seat availability, and print tickets with important information. The system includes live seat tracking, up-to-date movie schedules, and an admin section for effective oversight of screenings, seating plans, and customer information.</p>
+                       
+                    </div>
+                </div>
+            </div>
+        </section>
+       </main>
+       <footer>
+<div class="ft">
+    <div class="f1">
+        <h1>Hamnah's Portfolio</h1></div>
+    <div class="f2"> <ul>
+
+        <li style="font-size: 15px; font-weight: bold;">Contact</li>
+        <li>+923302917320</li>
+        <li>hamnahadnan1@gmail.com</li>
+    </ul>
+</div>
+    <div class="f3"></div>
+    <ul>
+        <li style="font-size: 15px; font-weight: bold;">Courses</li>
+        <li>Python</li>
+        <li>C++</li>
+        <li>Javascript</li>
+        <li>Html</li>
+    </ul>
+    <div class="f4"></div>
+    <ul> <li style="font-size: 15px; font-weight: bold;">Follow Me</li>
+       <p> <a style="margin:5px; background-color: rgb(0, 0, 0);border-radius: 20px; padding: -10px;" href="https://www.facebook.com/hamnah.adnan.1?mibextid=ZbWKwL"><ion-icon name="logo-facebook"></ion-icon></a></p>
+                               <p> <a style="margin:15px;background-color: rgb(0, 0, 0);border-radius: 20px; padding: -10px;" href="https://instagram.com/ham_nahh?igshid=OGQ5ZDc2ODk2ZA=="><ion-icon name="logo-instagram"></ion-icon></a></p>
+                                <p><a style="margin:12px;background-color: rgb(7, 3, 3);border-radius: 20px; padding: -8px;" href="https://www.linkedin.com/in/hamnah-adnan-57b486294?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><ion-icon name="logo-linkedin"></ion-icon></a></p>
+    </ul>
+    
+</div>
+<div class="ftright" style="text-align: center; background-color: black;">
+    Copyright&copy;hamnah'sportfolio.com|All rights reserved
+</div>
+       </footer>
+    </div> 
+       <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+       <script>
+        var typed = new Typed('#element', {
+          strings: ['Web Developer', 'Amazon VA','Web Designer'],
+          typeSpeed: 50,
+        });
+      </script>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
